@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group 'com.josemarcellio.minecraftstress'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation ("org.apache.httpcomponents:httpclient:4.5.14")
+    implementation ("commons-codec:commons-codec:1.15")
+
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.12.0"))
+    implementation("com.squareup.okhttp3:okhttp")
+}
+
+shadowJar {
+    archiveFileName = "MinecraftStress.jar"
+    manifest {
+        attributes(
+                'Main-Class': 'com.josemarcellio.minecraftstress.MinecraftStress'
+        )
+    }
+}
