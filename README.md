@@ -1,4 +1,4 @@
-# MinecraftStress
+# MinecraftStress-Test [DEMO]
 
 MinecraftStress adalah alat untuk melakukan serangan DDoS terhadap server Minecraft. Ini adalah contoh alat edukasi untuk menyerang server melalui serangan DDoS, gunakan hanya pada server test!
 
